@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Employee Attrition</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='background.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">-->
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center form-container" data-bs-hover-animate="pulse" style="font-family: Righteous, cursive;margin-top: 80px;margin-bottom: 20px;">Prediction</h1>
+    </div>
+    <div class="container" data-aos="zoom-in" data-aos-delay="500" style="margin-top: 80px;margin-bottom: 40px;">
+      <div class="align-middle form-container" style="text-align:center; font-size:20px ">{{ pred_text }}</div></div>
+    <!--<div class="container" style="margin-top: 80px;margin-bottom: 40px;"><a class="btn btn-block text-uppercase text-center text-dark border-dark shadow-lg d-flex justify-content-center align-items-center" role="button" data-aos="zoom-in" data-aos-delay="700" style="margin-left: auto;margin-right: auto;width: 275px;margin-top: 40px;margin-bottom: 20px;"
+            href="{{ url_for('home') }}">Make another prediction</a></div>-->
+            <form action="{{ url_for('home') }}">
+            <div class="row">
+                <span class="col-lg-4 col-sm-1"></span>
+                <button class="btn btn-primary col-sm-10 col-lg-4"  class="btn">Make another prediction</button>
+                <span class="col-lg-4 col-sm-1"></span>
+            </div>
+        </form>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</body>
+<footer>
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <!--<div class="col-md-4 col-xs-12">
+                  <div class="first">
+                      <h4>About</h4>
+                      <p>Employee Attrition prediction using voting classifier</p>
+                  </div>
+              </div>-->
+
+              <!--<div class="col-md-4 col-xs-12">-->
+              <span class="col-lg-4 col-sm-1"></span>
+                  <div class="third col-lg-4">
+                      <!--<h4> Project done by</h4>-->
+                      <h5>Venkatesha Prasad S</h5>
+                      <a href="https://github.com/iam-venkat03" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                      <a href="https://www.linkedin.com/in/venkateshaprasad/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                      <br>
+                      <h5>Sudharssan T.M</h5>
+                      <a href="https://github.com/SudharssanMohan" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                      <a href="https://www.linkedin.com/in/sudharssan-thanam-mohan-60445860/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                      <br>
+                      <h5>Varun K.R</h5>
+                      <a href="https://github.com/krvarun2000" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                      <a href="https://www.linkedin.com/in/varun-kr-4603a1179/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                  </div>
+              <span class="col-lg-4 col-sm-1"></span>
+
+          </div>
+      </div>
+
+  </div>
+</footer>
+</html>

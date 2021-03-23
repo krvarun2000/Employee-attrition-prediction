@@ -1,0 +1,32 @@
+/*body{
+  background-color:#696969;
+}*/
+
+.form-container {
+    margin-top: 15vh;
+    top: 15vh;
+    width: 100%;
+    background: rgba(211, 84, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+    color: white;
+}
+.form-container2 {
+    width: 100%;
+    background: rgba(211, 84, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+    color: white;
+}
+
+.btn {
+    text-align: center;
+    font-size: large;
+    align-self: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
